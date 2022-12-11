@@ -3,23 +3,12 @@
 namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
-use ApiPlatform\Metadata\Get;
-use ApiPlatform\Metadata\GetCollection;
-use ApiPlatform\Metadata\Post;
-use ApiPlatform\Metadata\Put;
-use ApiPlatform\Metadata\Delete;
 
 use App\Repository\CheeseListingRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: CheeseListingRepository::class)]
-#[ApiResource(operations: [
-    new Get(),
-    new Post(),
-    new Put(),
-    new Delete(),
-    new GetCollection()
-])]
+#[ApiResource(shortName: "cheeses")]
 class CheeseListing
 {
     #[ORM\Id]

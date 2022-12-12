@@ -52,3 +52,9 @@ You can also create a .env.local file and override DATABASE_URL there. Using roo
 #### Using the Profiler in an API
 
     composer require profiler --dev
+
+
+#### Install Carbon
+A simple PHP API extension for DateTime.
+    
+    composer require nesbot/carbon

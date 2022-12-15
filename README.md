@@ -58,3 +58,11 @@ You can also create a .env.local file and override DATABASE_URL there. Using roo
 A simple PHP API extension for DateTime.
     
     composer require nesbot/carbon
+
+
+#### Controlling Field Names:
+    
+    #[SerializedName('description')]
+    public function setTextDescription(string $description): self
+    {}
+

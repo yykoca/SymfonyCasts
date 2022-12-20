@@ -26,7 +26,8 @@ use Symfony\Component\Serializer\Annotation\SerializedName;
         'groups' => ['cheese_listing:write'],
         'swagger_definition_name' => 'Write'
     ],
-    shortName: "cheeses"
+    shortName: "cheeses",
+    paginationItemsPerPage: 10
 )]
 #[ApiFilter(BooleanFilter::class, properties: ['isPublished'])]
 #[ApiFilter(SearchFilter::class, properties: ['title' => 'partial', 'description' => 'partial'])]
